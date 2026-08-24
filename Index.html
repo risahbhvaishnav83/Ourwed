@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Wedding Celebration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAF7;
+      --card-bg: #FFFFFF;
+      --text: #2C2A29;
+      --accent: #B08D57;
+      --border: #E8E5DF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-top: 12px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
+    .date {
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      color: var(--accent);
+      text-align: center;
+    }
+    .timeline-item {
+      display: flex;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .time {
+      width: 85px;
+      font-weight: 500;
+      font-size: 0.85rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .details h3 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    .details p {
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s;
+    }
+    .btn:active { opacity: 0.85; }
+    .note {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Celebration of Love</h1>
+      <p class="date">February 19</p>
+    </header>
+
+    <!-- Itinerary Section -->
+    <div class="card">
+      <h2>Order of Events</h2>
+      <div class="timeline-item">
+        <div class="time">11:00 AM</div>
+        <div class="details">
+          <h3>Welcome & Gathering</h3>
+          <p>Refreshments & light bites at the courtyard</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">01:00 PM</div>
+        <div class="details">
+          <h3>Main Ceremony</h3>
+          <p>Please be seated at the main hall</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">04:30 PM</div>
+        <div class="details">
+          <h3>High Tea & Mingling</h3>
+          <p>Garden area</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">07:30 PM</div>
+        <div class="details">
+          <h3>Reception & Dinner</h3>
+          <p>Dinner, toasts, and dancing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Station Section -->
+    <div class="card">
+      <h2>Share Your Snaps</h2>
+      <p style="font-size: 0.85rem; text-align: center; margin-bottom: 18px; color: #555;">
+        Help us capture every memory! Tap below to drop the photos and videos you took today into our shared album.
+      </p>
+      
+      <!-- Replace the href below with your shared album or upload link -->
+      <a href="YOUR_UPLOAD_LINK_HERE" class="btn" target="_blank">
+        Upload Photos & Videos
+      </a>
+      <p class="note">No app download required to upload</p>
+    </div>
+  </div>
+</body>
+</html>
+
